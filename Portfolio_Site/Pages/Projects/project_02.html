@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <title>
+    Portfolio || Project 2
+  </title>
+
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="refresh" contents="5">
+
+  <meta name="author" content="Timothy Clemans">
+  <meta name="keywords" content="Resume, Examples, Reference, Demonstration">
+  <meta name="description" content="This is to demonstrate my basic ability to create the front end of a website.">
+
+  <link rel="icon" href="../command_03.png" type="icon">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="../../CSS/styles.css">
+
+  <script type="text/javascript" src="../../Scripting/script_02.js" async="true"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <!-- Page Navigation -->
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <!-- Main index page -->
+          <a href="../../index.html" alt="Link to home page.">Home</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <!-- Biography page -->
+          <a href="../about.html" alt="Link to about page.">About</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <!-- Resume page -->
+          <a href="../resume.html" alt="Link to resume page.">Resume</a>
+        </div>
+        <div class="nav-link-wrapper active-nav-link">
+          <!-- Projects page -->
+          <div class="dropdown">
+            <a href="../projects.html" alt="Main Projects Page">Projects</a>
+            <div class="dropdown-content">
+              <a href="project_01.html" alt="Project One Page">Project 1</a>
+              <a href="project_02.html"alt="Project Two Page">Project 2</a>
+              <a href="project_03.html"alt="Project Three Page">Project 3</a>
+              <a href="project_04.html"alt="Project Four Page">Project 4</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <!-- User Identification -->
+        <div class="brand">
+          Timothy Clemans
+        </div>
+      </div>
+    </div>
+    <div class="two-column-wrapper">
+      <div class="profile-image-wrapper">
+        <div class="slideshow-container">
+      
+          <div class="mySlides1 fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="../../Images/Projects/Pro_Analytcal_01.jpg">
+            <div class="text1" style="color:white;">PLC Communications</div>
+          </div>
+
+          <div class="mySlides1 fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="../../Images/Projects/Pro_Analytcal_02.jpg">
+            <div class="text1" style="color:white;">Industrial Interfacing</div>
+          </div>
+
+          <div class="mySlides1 fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="../../Images/Projects/Pro_Analytcal_03.jpg">
+            <div class="text1">Edge Computing</div>
+          </div>
+
+          <div class="mySlides1 fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="../../Images/Projects/Pro_Analytcal_04.jpg">
+            <div class="text1">Instrumentation</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+
+        </div>
+
+        <div style="text-align:center">
+          <span class="myDots1" onclick="currentSlide(1,0)"></span>
+          <span class="myDots1" onclick="currentSlide(2,0)"></span>
+          <span class="myDots1" onclick="currentSlide(3,0)"></span>
+          <span class="myDots1" onclick="currentSlide(4,0)"></span>
+        </div>
+      </div>
+      <div class="profile-content-wrapper">
+        <h1>Project 2</h1>
+        <h2>Analytical Applications LLC. Project</h2>
+        <section>
+          <!-- Analytical Applications -->
+          <p>
+            This is a company created by me to produce a product and employment for myself during the COVID-19 
+            lockdown. This is still a work in progress and now a side project for me as time allows. While many 
+            functions are still in the prototype phase I have had some field instillation success.
+          </p>
+          <p>
+            This project was to cross abilities of PLC's and edge computers to allow IOT and industrial 
+            applications to mix functionality. As you use higher level function in a PLC it losses some of 
+            its ability because it has very limited resources. If connected with an overlay of computing 
+            it is allowed to retain its reliability and speed because tasks like calibration, tunning, 
+            data logging and some inferred or long term calculational alarming can be done externally. Such as 
+            pump wear over time for maintenance or battery charging rate and capacity. This becomes ever harder 
+            as the applications become more and more remote or standalone.
+          </p>
+          <p>
+            One such applications allowed remote access into a PLC in the oil field using a JavaScript and 
+            HTML interface, a Python computation backbone, and C++ communications with the PLC. These programs 
+            use ini, xml and Json objects to allow live data for a internal site webpage. This provides remote 
+            access and data collection.
+          </p>
+          <p>
+            These data communications came in the form of OPC-UA, RS-485, CIP, and ProfiNet protocols. When these 
+            communications styles were not available or not allowed by the customer to tie into the system, it was set up 
+            through 16-bit or 32-bit UDP messaging. This granted less control but provided third party defensibility.
+        </section>
+      </div>
+    </div>
+    <div class="foot-wrapper">
+      <!-- Footer -->
+      <div class="left-side">
+        <div>
+          <p>Please contact me by:</p>
+        </div>
+        <div>
+          <p>Phone: 303-809-4631</p>
+        </div>
+        <div>
+          <p>
+            E-mail: <a href="mailto:clemansta@gmail.com">clemansta@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="right-side">
+        <div>
+          <p>
+            Please visit me: <a href="https://www.linkedin.com/in/timothy-a-clemans" alt="LinkedIn Link">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

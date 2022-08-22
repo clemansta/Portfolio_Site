@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <title>
+    Portfolio || Home
+  </title>
+
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="refresh" contents="5">
+
+  <meta name="author" content="Timothy Clemans">
+  <meta name="keywords" content="Resume, Examples, Reference, Demonstration, Projects">
+  <meta name="description" content="This is to demonstrate my basic ability to create the front end of a website.">
+
+  <link rel="icon" href="command_03.png" type="icon">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
+
+  <script type="text/javascript" src="Scripting/script_01.js" async="true"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <!-- Site Navigation -->
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <!-- Main index page -->
+          <a href="index.html" alt="Link to home page.">Home</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <!-- Biography page -->
+          <a href="Pages/about.html" alt="Link to about page.">About</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <!-- Resume page -->
+          <a href="Pages/resume.html" alt="Link to resume page.">Resume</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <!-- Projects page -->
+          <div class="dropdown">
+            <a href="Pages/projects.html" alt="Main Projects Page">Projects</a>
+            <div class="dropdown-content">
+              <a href="Pages/Projects/project_01.html" alt="Project One Page">Project 1</a>
+              <a href="Pages/Projects/project_02.html"alt="Project Two Page">Project 2</a>
+              <a href="Pages/Projects/project_03.html"alt="Project Three Page">Project 3</a>
+              <a href="Pages/Projects/project_04.html"alt="Project Four Page">Project 4</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <!-- User Identification -->
+        <div class="brand">
+          Timothy Clemans
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+      <!-- Section 1 -->
+        <div class="portfolio-item-wrapper">
+          <!-- Image and Idea 1 -->
+          <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Education.jpg)" alt="Picture of many stacks of books."></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper"  onClick="overlayOnOff('Education')">
+              <img class="icon" src="Images/Logos/Education.png" alt="Education Icon">
+              <div class="subtitle">
+                Education
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Section 2 -->
+        <div class="portfolio-item-wrapper">
+          <!-- Image and Idea 2 -->
+          <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Chemistry.jpg)" alt="Picture of glass chemistry equipment."></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img class="icon" src="Images/Logos/Chemistry.png" alt="Chemistry Icon" onClick="overlayOnOff('Chemistry')">
+            </div>
+
+            <div class="subtitle">
+              Chemistry
+            </div>
+          </div>
+        </div>
+
+      <!-- Section 3 -->
+        <div class="portfolio-item-wrapper">
+          <!-- Image and Idea 3 -->
+          <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Geology.jpg)" alt="Picture of a canyon with a river at the bottom."></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img class="icon" src="Images/Logos/Geology.png" alt="Geology Icon" onClick="overlayOnOff('Geology')">
+            </div>
+
+            <div class="subtitle">
+              Geology
+            </div>
+          </div>
+        </div>
+
+      <!-- Place holder for explanation window -->
+        <div id="Education" class="skill-display">
+          <pre>
+            <b>Education:</b>
+            • Bachelors of Science, Analytical Chemistry with specialization in analytical instrumentation methods
+            • Bachelors of Arts, Structural Geology with specialization in environmental geochemistry and structures
+            • Bachelors of Science, Electronics Engineering and Technology with specialization in sensors and control systems
+          </pre>
+        </div>
+        <div id="Chemistry" class="skill-display">
+          <pre>
+            <b>Chemistry:</b>
+            • GC-Mass Spec (Gas Chromatography–Mass Spectrometry)
+            • HPLC (High Performance Liquid Chromatography)
+            • NMR (Nuclear magnetic resonance)
+            • ISOCS (In Situ Object Counting System)
+            • UV-VIS (UV–Visible Spectrophotometry)
+          </pre>
+        </div>
+        <div id="Geology" class="skill-display">
+          <pre>
+            <b>Geology:</b>
+            • ArcView GIS: Subsurface mapping and surface overlay
+            • Core Logging: Observational and Leachate Assay
+            • Material testing: Penitromiter, Screen Sorting and Troxler
+          </pre>
+        </div>
+
+      <!-- Section 4 -->
+        <div class="portfolio-item-wrapper">
+          <!-- Image and Idea 4 -->
+          <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Controls.jpg)" alt="Picture of pushbutton relay pannel."></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img class="icon" src="Images/Logos/Controls.png" alt="PLC Icon" onClick="overlayOnOff('Controls')">
+            </div>
+
+            <div class="subtitle">
+              Instrumentation And Controls
+            </div>
+          </div>
+        </div>
+
+
+      <!-- Section 5 -->
+        <div class="portfolio-item-wrapper">
+          <!-- Image and Idea 5 -->
+          <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Engineering.jpg)" alt="Picture of robotic arm and press."></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img class="icon" src="Images/Logos/Engineering.png" alt="Engineering Icon" onClick="overlayOnOff('Engineering')">
+            </div>
+
+            <div class="subtitle">
+              Engineering
+            </div>
+          </div>
+        </div>
+
+
+      <!-- Section 6 -->
+        <div class="portfolio-item-wrapper">
+          <!-- Image and Idea 6 -->
+          <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Programming.jpg)" alt="Picture of a computer screen and programming code."></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img class="icon" src="Images/Logos/Programming.png" alt="Programming Icon" onClick="overlayOnOff('Programming')">
+            </div>
+
+            <div class="subtitle">
+              Programming
+            </div>
+          </div>
+        </div>
+
+      <!-- Place holder for explanation window -->
+        <div id="Controls" class="skill-display">
+          <pre>
+            <b>Controls:</b>
+            • Allen-Bradly: ControlLogix 500 & 5000 with FactoryTalk HMI (SE and ME)
+            • Siemens S7: 300, 400, 1200   • Siemens Simatic WinCC basic and Advanced
+            • Pheonix Contact PLCNext      • OPTO22:  SNAP PAC and Epic Groove
+            <b>Instrumentation:</b>
+            • Rosemount      • Endres Houser      • Omega      • Schneider
+            • Texas Instruments      • Siemens      • Honeywell
+          </pre>
+        </div>
+        <div id="Engineering" class="skill-display">
+          <pre>
+            <b>Electrical Engineering:</b>
+            • Site planning and design, electrical schedules, instrumentation schedules 
+            • AutoCad: One Lines, 3 Lines, Instrumentation, Instalation, and Network
+            <b>Controls Engineering:</b>
+            • Site Investigation, Commissioning and Troubleshooting
+            • Control System Design Build and Retrofitting
+            • Operational Documentation and training
+          </pre>
+        </div>
+        <div id="Programming" class="skill-display">
+          <pre>
+            <b>Programming:</b>
+            • PLC: Ladder Logic, function block, and structured text
+            • HMI: SE and ME style, DCS(Distributed Control System), and Headless (Web based)
+            <b>Other Programming:</b>
+            • Object Oriented: C++, Java, Python, and Java Script
+            • Software Agile Design, Maintenance and Life Cycle Management
+            • HTML, CSS, and counting
+          </pre>
+        </div>
+
+      <!-- Section 7 -->
+        <div class="portfolio-item-wrapper">
+          <!-- Image and Idea 7 -->
+          <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Project.jpg)" alt="Picture of 3D rendered control room."></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img class="icon" src="Images/Logos/Project.png" alt="Regulations Icon" onClick="overlayOnOff('Project')">
+            </div>
+
+            <div class="subtitle">
+              Project Management
+            </div>
+          </div>
+        </div>
+
+      <!-- Section 8 -->
+        <div class="portfolio-item-wrapper">
+          <!-- Image and Idea 8 -->
+          <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Regulations.jpg)" alt="Picture of a pillard court house."></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img class="icon" src="Images/Logos/Regulations.png" alt="Regulations Icon" onClick="overlayOnOff('Regulations')">
+            </div>
+
+            <div class="subtitle">
+              Regulations
+            </div>
+          </div>
+        </div>
+
+      <!-- Section 9 -->
+        <div class="portfolio-item-wrapper">
+          <!-- Image and Idea 9 -->
+          <div class="portfolio-img-background" style="background-image:url(images/Portfolio/Other.jpg)" alt="Picture of clockwork gears."></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="Images/Logos/Other.png" alt="Balance Icon" onClick="overlayOnOff('Other')">
+            </div>
+
+            <div class="subtitle">
+              Additional</br> Experience
+            </div>
+          </div>
+        </div>
+
+      <!-- Place holder for explanation window -->
+        <div id="Project" class="skill-display">
+          <pre>
+            <b>Project Management:</b>
+            • Site Hazerdous Waste Managment
+            • 
+            • Control System Managment Program
+          </pre>
+        </div>
+        <div id="Regulations" class="skill-display">
+          <pre>
+            <b>Regulations:</b>
+            • NEC      • NFPA      • UL
+            • RCRA      • CERCLA      • Drinking Water
+            • OSHA Health and Safety Regulations
+          </pre>
+        </div>
+        <div id="Other" class="skill-display">
+          <pre>
+            <b>Additional Experience:</b>
+            • Drone programming
+            • PCB Design
+            • 3D Printing
+          </pre>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="foot-wrapper">
+      <!-- Footer -->
+      <div class="left-side">
+        <div>
+          <p>Please contact me by:</p>
+        </div>
+        <div>
+          <p>Phone: 303-809-4631</p>
+        </div>
+        <div>
+          <p>
+            E-mail: <a href="mailto:clemansta@gmail.com">clemansta@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="right-side">
+        <div>
+          <p>
+            Please visit me: <a href="https://www.linkedin.com/in/timothy-a-clemans" alt="LinkedIn Link">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
