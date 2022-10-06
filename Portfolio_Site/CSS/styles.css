@@ -39,6 +39,10 @@ h2 {
   text-indent: 10%;
 }
 
+li {
+  width: 100%;
+}
+
 button {
   background-color: darkgreen;
   Color:white;
@@ -268,7 +272,7 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   height: 350px;
-  width: 100%
+  width: 100%;
 }
 
 .img-text-wrapper {
@@ -278,7 +282,6 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
   text-align: center;
 }
 
@@ -461,7 +464,7 @@ hr.rounded {
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 650px) {
   .two-column-wrapper, .portfolio-items-wrapper {
     grid-template-columns: 1fr;
   }
@@ -473,7 +476,7 @@ hr.rounded {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 500px) {
   .nav-wrapper {
     display: block;
   }

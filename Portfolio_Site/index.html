@@ -64,11 +64,11 @@
       <div class="portfolio-items-wrapper">
 
       <!-- Section 1 -->
-        <div class="portfolio-item-wrapper">
+        <div class="portfolio-item-wrapper" onClick="overlayOnOff('Education',window.innerWidth)">
           <!-- Image and Idea 1 -->
           <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Education.jpg)" alt="Picture of many stacks of books."></div>
           <div class="img-text-wrapper">
-            <div class="logo-wrapper"  onClick="overlayOnOff('Education')">
+            <div class="logo-wrapper">
               <img class="icon" src="Images/Logos/Education.png" alt="Education Icon">
               <div class="subtitle">
                 Education
@@ -76,14 +76,21 @@
             </div>
           </div>
         </div>
+        <div id="Education_M" class="skill-display">
+          <ul><b>Education:</b>
+            <li>Bachelors of Science, Analytical Chemistry with specialization in analytical instrumentation methods</li>
+            <li>Bachelors of Arts, Structural Geology with specialization in environmental geochemistry and structures</li>
+            <li>Bachelors of Science, Electronics Engineering and Technology with specialization in sensors and control systems</li>
+          </ul>
+        </div>
 
       <!-- Section 2 -->
-        <div class="portfolio-item-wrapper">
+        <div class="portfolio-item-wrapper" onClick="overlayOnOff('Chemistry',window.innerWidth)">
           <!-- Image and Idea 2 -->
           <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Chemistry.jpg)" alt="Picture of glass chemistry equipment."></div>
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img class="icon" src="Images/Logos/Chemistry.png" alt="Chemistry Icon" onClick="overlayOnOff('Chemistry')">
+              <img class="icon" src="Images/Logos/Chemistry.png" alt="Chemistry Icon">
             </div>
 
             <div class="subtitle">
@@ -91,14 +98,23 @@
             </div>
           </div>
         </div>
+        <div id="Chemistry_M" class="skill-display">
+          <ul><b>Chemistry:</b>
+            <li>GC-Mass Spec (Gas Chromatography–Mass Spectrometry)</li>
+            <li>HPLC (High Performance Liquid Chromatography)</li>
+            <li>NMR (Nuclear magnetic resonance)</li>
+            <li>ISOCS (In Situ Object Counting System)</li>
+            <li>UV-VIS (UV–Visible Spectrophotometry)</li>
+          </ul>
+        </div>
 
       <!-- Section 3 -->
-        <div class="portfolio-item-wrapper">
+        <div class="portfolio-item-wrapper" onClick="overlayOnOff('Geology',window.innerWidth)">
           <!-- Image and Idea 3 -->
           <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Geology.jpg)" alt="Picture of a canyon with a river at the bottom."></div>
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img class="icon" src="Images/Logos/Geology.png" alt="Geology Icon" onClick="overlayOnOff('Geology')">
+              <img class="icon" src="Images/Logos/Geology.png" alt="Geology Icon">
             </div>
 
             <div class="subtitle">
@@ -106,42 +122,46 @@
             </div>
           </div>
         </div>
+        <div id="Geology_M" class="skill-display">
+          <ul><b>Geology:</b>
+            <li>ArcView GIS: Subsurface mapping and surface overlay</li>
+            <li>Core Logging: Observational and Leachate Assay</li>
+            <li>Material testing: Penitromiter, Screen Sorting and Troxler</li>
+          </ul>
+        </div>
 
       <!-- Place holder for explanation window -->
         <div id="Education" class="skill-display">
-          <pre>
-            <b>Education:</b>
-            • Bachelors of Science, Analytical Chemistry with specialization in analytical instrumentation methods
-            • Bachelors of Arts, Structural Geology with specialization in environmental geochemistry and structures
-            • Bachelors of Science, Electronics Engineering and Technology with specialization in sensors and control systems
-          </pre>
+          <ul><b>Education:</b>
+            <li>Bachelors of Science, Analytical Chemistry with specialization in analytical instrumentation methods</li>
+            <li>Bachelors of Arts, Structural Geology with specialization in environmental geochemistry and structures</li>
+            <li>Bachelors of Science, Electronics Engineering and Technology with specialization in sensors and control systems</li>
+          </ul>
         </div>
         <div id="Chemistry" class="skill-display">
-          <pre>
-            <b>Chemistry:</b>
-            • GC-Mass Spec (Gas Chromatography–Mass Spectrometry)
-            • HPLC (High Performance Liquid Chromatography)
-            • NMR (Nuclear magnetic resonance)
-            • ISOCS (In Situ Object Counting System)
-            • UV-VIS (UV–Visible Spectrophotometry)
-          </pre>
+          <ul><b>Chemistry:</b>
+            <li>GC-Mass Spec (Gas Chromatography–Mass Spectrometry)</li>
+            <li>HPLC (High Performance Liquid Chromatography)</li>
+            <li>NMR (Nuclear magnetic resonance)</li>
+            <li>ISOCS (In Situ Object Counting System)</li>
+            <li>UV-VIS (UV–Visible Spectrophotometry)</li>
+          </ul>
         </div>
         <div id="Geology" class="skill-display">
-          <pre>
-            <b>Geology:</b>
-            • ArcView GIS: Subsurface mapping and surface overlay
-            • Core Logging: Observational and Leachate Assay
-            • Material testing: Penitromiter, Screen Sorting and Troxler
-          </pre>
+          <ul><b>Geology:</b>
+            <li>ArcView GIS: Subsurface mapping and surface overlay</li>
+            <li>Core Logging: Observational and Leachate Assay</li>
+            <li>Material testing: Penitromiter, Screen Sorting and Troxler</li>
+          </ul>
         </div>
 
       <!-- Section 4 -->
-        <div class="portfolio-item-wrapper">
+        <div class="portfolio-item-wrapper" onClick="overlayOnOff('Controls',window.innerWidth)">
           <!-- Image and Idea 4 -->
           <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Controls.jpg)" alt="Picture of pushbutton relay pannel."></div>
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img class="icon" src="Images/Logos/Controls.png" alt="PLC Icon" onClick="overlayOnOff('Controls')">
+              <img class="icon" src="Images/Logos/Controls.png" alt="PLC Icon">
             </div>
 
             <div class="subtitle">
@@ -149,15 +169,25 @@
             </div>
           </div>
         </div>
-
+        <div id="Controls_M" class="skill-display">
+          <ul><b>Controls:</b>
+            <li>Allen-Bradly: ControlLogix 500 & 5000 with FactoryTalk HMI (SE and ME)</li>
+            <li>Siemens S7: 300, 400, 1200   • Siemens Simatic WinCC basic and Advanced</li>
+            <li>Pheonix Contact PLCNext      • OPTO22:  SNAP PAC and Epic Groove</li>
+          </ul>
+          <ul><b>Instrumentation:</b>
+            <li>Rosemount      • Endres Houser      • Omega      • Schneider</li>
+            <li>Texas Instruments      • Siemens      • Honeywell</li>
+          </ul>
+        </div>
 
       <!-- Section 5 -->
-        <div class="portfolio-item-wrapper">
+        <div class="portfolio-item-wrapper" onClick="overlayOnOff('Engineering',window.innerWidth)">
           <!-- Image and Idea 5 -->
           <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Engineering.jpg)" alt="Picture of robotic arm and press."></div>
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img class="icon" src="Images/Logos/Engineering.png" alt="Engineering Icon" onClick="overlayOnOff('Engineering')">
+              <img class="icon" src="Images/Logos/Engineering.png" alt="Engineering Icon">
             </div>
 
             <div class="subtitle">
@@ -165,15 +195,26 @@
             </div>
           </div>
         </div>
-
+        <div id="Engineering_M" class="skill-display">
+          <ul>
+            <b>Electrical Engineering:</b>
+            <li>Site planning and design, electrical schedules, instrumentation schedules </li>
+            <li>AutoCad: One Lines, 3 Lines, Instrumentation, Instalation, and Network</li>
+          </ul>
+          <ul><b>Controls Engineering:</b>
+            <li>Site Investigation, Commissioning and Troubleshooting</li>
+            <li>Control System Design Build and Retrofitting</li>
+            <li>Operational Documentation and training</li>
+          </ul>
+        </div>
 
       <!-- Section 6 -->
-        <div class="portfolio-item-wrapper">
+        <div class="portfolio-item-wrapper" onClick="overlayOnOff('Programming',window.innerWidth)">
           <!-- Image and Idea 6 -->
           <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Programming.jpg)" alt="Picture of a computer screen and programming code."></div>
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img class="icon" src="Images/Logos/Programming.png" alt="Programming Icon" onClick="overlayOnOff('Programming')">
+              <img class="icon" src="Images/Logos/Programming.png" alt="Programming Icon">
             </div>
 
             <div class="subtitle">
@@ -181,49 +222,61 @@
             </div>
           </div>
         </div>
+        <div id="Programming_M" class="skill-display">
+          <ul><b>Programming:</b>
+            <li>PLC: Ladder Logic, function block, and structured text</li>
+            <li>HMI: SE and ME style, DCS(Distributed Control System), and Headless (Web based)</li>
+          </ul>
+          <ul><b>Other Programming:</b>
+            <li>Object Oriented: C++, Java, Python, and Java Script</li>
+            <li>Software Agile Design, Maintenance and Life Cycle Management</li>
+            <li>HTML, CSS, and counting</li>
+          </ul>
+        </div>
 
       <!-- Place holder for explanation window -->
         <div id="Controls" class="skill-display">
-          <pre>
-            <b>Controls:</b>
-            • Allen-Bradly: ControlLogix 500 & 5000 with FactoryTalk HMI (SE and ME)
-            • Siemens S7: 300, 400, 1200   • Siemens Simatic WinCC basic and Advanced
-            • Pheonix Contact PLCNext      • OPTO22:  SNAP PAC and Epic Groove
-            <b>Instrumentation:</b>
-            • Rosemount      • Endres Houser      • Omega      • Schneider
-            • Texas Instruments      • Siemens      • Honeywell
-          </pre>
+          <ul><b>Controls:</b>
+            <li>Allen-Bradly: ControlLogix 500 & 5000 with FactoryTalk HMI (SE and ME)</li>
+            <li>Siemens S7: 300, 400, 1200   • Siemens Simatic WinCC basic and Advanced</li>
+            <li>Pheonix Contact PLCNext      • OPTO22:  SNAP PAC and Epic Groove</li>
+          </ul>
+          <ul><b>Instrumentation:</b>
+            <li>Rosemount      • Endres Houser      • Omega      • Schneider</li>
+            <li>Texas Instruments      • Siemens      • Honeywell</li>
+          </ul>
         </div>
         <div id="Engineering" class="skill-display">
-          <pre>
+          <ul>
             <b>Electrical Engineering:</b>
-            • Site planning and design, electrical schedules, instrumentation schedules 
-            • AutoCad: One Lines, 3 Lines, Instrumentation, Instalation, and Network
-            <b>Controls Engineering:</b>
-            • Site Investigation, Commissioning and Troubleshooting
-            • Control System Design Build and Retrofitting
-            • Operational Documentation and training
-          </pre>
+            <li>Site planning and design, electrical schedules, instrumentation schedules </li>
+            <li>AutoCad: One Lines, 3 Lines, Instrumentation, Instalation, and Network</li>
+          </ul>
+          <ul><b>Controls Engineering:</b>
+            <li>Site Investigation, Commissioning and Troubleshooting</li>
+            <li>Control System Design Build and Retrofitting</li>
+            <li>Operational Documentation and training</li>
+          </ul>
         </div>
         <div id="Programming" class="skill-display">
-          <pre>
-            <b>Programming:</b>
-            • PLC: Ladder Logic, function block, and structured text
-            • HMI: SE and ME style, DCS(Distributed Control System), and Headless (Web based)
-            <b>Other Programming:</b>
-            • Object Oriented: C++, Java, Python, and Java Script
-            • Software Agile Design, Maintenance and Life Cycle Management
-            • HTML, CSS, and counting
-          </pre>
+          <ul><b>Programming:</b>
+            <li>PLC: Ladder Logic, function block, and structured text</li>
+            <li>HMI: SE and ME style, DCS(Distributed Control System), and Headless (Web based)</li>
+          </ul>
+          <ul><b>Other Programming:</b>
+            <li>Object Oriented: C++, Java, Python, and Java Script</li>
+            <li>Software Agile Design, Maintenance and Life Cycle Management</li>
+            <li>HTML, CSS, and counting</li>
+          </ul>
         </div>
 
       <!-- Section 7 -->
-        <div class="portfolio-item-wrapper">
+        <div class="portfolio-item-wrapper" onClick="overlayOnOff('Project',window.innerWidth)">
           <!-- Image and Idea 7 -->
           <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Project.jpg)" alt="Picture of 3D rendered control room."></div>
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img class="icon" src="Images/Logos/Project.png" alt="Regulations Icon" onClick="overlayOnOff('Project')">
+              <img class="icon" src="Images/Logos/Project.png" alt="Regulations Icon">
             </div>
 
             <div class="subtitle">
@@ -231,14 +284,21 @@
             </div>
           </div>
         </div>
+        <div id="Project_M" class="skill-display">
+          <ul><b>Project Management:</b>
+            <li>Site Hazerdous Waste Managment</li>
+            <li>Documentation and cost control</li>
+            <li>Control System Managment Program</li>
+          </ul>
+        </div>
 
       <!-- Section 8 -->
-        <div class="portfolio-item-wrapper">
+        <div class="portfolio-item-wrapper" onClick="overlayOnOff('Regulations',window.innerWidth)">
           <!-- Image and Idea 8 -->
           <div class="portfolio-img-background" style="background-image:url(Images/Portfolio/Regulations.jpg)" alt="Picture of a pillard court house."></div>
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img class="icon" src="Images/Logos/Regulations.png" alt="Regulations Icon" onClick="overlayOnOff('Regulations')">
+              <img class="icon" src="Images/Logos/Regulations.png" alt="Regulations Icon">
             </div>
 
             <div class="subtitle">
@@ -246,14 +306,21 @@
             </div>
           </div>
         </div>
+        <div id="Regulations_M" class="skill-display">
+          <b>Regulations:</b>
+          <li>NEC      • NFPA      • UL</li>
+          <li>RCRA      • CERCLA      • Drinking Water</li>
+          <li>OSHA Health and Safety Regulations</li>
+        </ul>
+        </div>
 
       <!-- Section 9 -->
-        <div class="portfolio-item-wrapper">
+        <div class="portfolio-item-wrapper" onClick="overlayOnOff('Other',window.innerWidth)">
           <!-- Image and Idea 9 -->
           <div class="portfolio-img-background" style="background-image:url(images/Portfolio/Other.jpg)" alt="Picture of clockwork gears."></div>
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="Images/Logos/Other.png" alt="Balance Icon" onClick="overlayOnOff('Other')">
+              <img src="Images/Logos/Other.png" alt="Balance Icon">
             </div>
 
             <div class="subtitle">
@@ -261,31 +328,36 @@
             </div>
           </div>
         </div>
+        <div id="Other_M" class="skill-display">
+          <ul><b>Additional Experience:</b>
+            <li>Drone programming</li>
+            <li>PCB Design</li>
+            <li>3D Printing</li>
+          </ul>
+        </div>
 
       <!-- Place holder for explanation window -->
         <div id="Project" class="skill-display">
-          <pre>
-            <b>Project Management:</b>
-            • Site Hazerdous Waste Managment
-            • 
-            • Control System Managment Program
-          </pre>
+          <ul><b>Project Management:</b>
+            <li>Site Hazerdous Waste Managment</li>
+            <li>Documentation and cost control</li>
+            <li>Control System Managment Program</li>
+          </ul>
         </div>
         <div id="Regulations" class="skill-display">
-          <pre>
+          <ul>
             <b>Regulations:</b>
-            • NEC      • NFPA      • UL
-            • RCRA      • CERCLA      • Drinking Water
-            • OSHA Health and Safety Regulations
-          </pre>
+            <li>NEC      • NFPA      • UL</li>
+            <li>RCRA      • CERCLA      • Drinking Water</li>
+            <li>OSHA Health and Safety Regulations</li>
+          </ul>
         </div>
         <div id="Other" class="skill-display">
-          <pre>
-            <b>Additional Experience:</b>
-            • Drone programming
-            • PCB Design
-            • 3D Printing
-          </pre>
+          <ul><b>Additional Experience:</b>
+            <li>Drone programming</li>
+            <li>PCB Design</li>
+            <li>3D Printing</li>
+          </ul>
         </div>
 
       </div>
