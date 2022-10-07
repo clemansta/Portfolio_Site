@@ -23,7 +23,7 @@
   <script type="text/javascript" src="../Scripting/script_03.js" async="true"></script>
 </head>
 
-<body onload="iframeChange(0)">
+<body ><!-- onload="iframeChange(0)" -->
   <div class="container">
     <div class="nav-wrapper">
       <!-- Page Navigation -->
@@ -63,11 +63,11 @@
 
     <div>
       <center>
-        <iframe id="FR1" src="Resume/myResume.html" title="Timothy Clemans Resume"></iframe>
-        <iframe id="FR2" src="Resume/myCoverLetter.html" title="Timothy Clemans Cover Letter"></iframe>
+        <iframe id="FR1" src="Resume/myResume.html" title="Timothy Clemans Resume" style="display: block;"></iframe>
+        <iframe id="FR2" src="Resume/myCoverLetter.html" title="Timothy Clemans Cover Letter" style="display: block;"></iframe>
         <div>
-          <button onclick="iframeChange(0)">Resume</button>
-          <button onclick="iframeChange(1)">Cover Letter</button>
+          <button onclick="iframeChange(0)" alt="This displays my resume.">Resume</button>
+          <button onclick="iframeChange(1)" alt="This displays my cover letter.">Cover Letter</button>
         </div>
       </center>
     </div>
