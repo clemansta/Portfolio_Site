@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function prodChange(n) {
   if(n == 3) {
     document.getElementById("PR1").style.display = "none";
