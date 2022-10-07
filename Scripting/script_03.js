@@ -19,18 +19,34 @@ function iframeChange(n) {
   }
 }
 
-function myEmail(fName, lName, cTitle, cName, cNumb, cEmail) {
-  console.log("Email Sending");
+function sendEmail() {
   alert("Thanks for registering with me!")
-  var subject = "Webpage File Download";
+  let fName = document.getElementById("fname").value;
+  let lName = document.getElementById("lname").value;
+  let cTitle = "Undisclosed";
+  let cName = "Undisclosed";
+  console.log(document.getElementById("ctitle").value,document.getElementById("cname").value)
+  if(document.getElementById("ctitle").value != "") {
+    cTitle = document.getElementById("ctitle").value;
+  }
+  if(document.getElementById("cname").value != "") {
+    cName = document.getElementById("cname").value;
+  }
+  let pNumb = document.getElementById("pnumb").value;
+  let eMail = document.getElementById("email").value;
+
+  var mySubject = "Webpage File Download";
+  var intro = "Hello, \n\n";
+  var myMessage = intro.concat(fName, " ", lName, ", has accessed your online profile site and requested your resume and or coverletter. This individual is a ", cTitle, " at ",cName, ". They can be reached at: \n\nPhone: ", pNumb,"\n\nE-Mail: ", eMail, "\n\nThanks, \n   Your Profile Site.")
+
   Email.send({
     Host: "smtp.gmail.com",
-    Username: cEmail,
+    Username: "need@email.??",
     Password: "Enter your password",
     To: 'clemansta@gmail.com',
-    From: cEmail,
-    Subject: "Email for Web Resume",
-    Body: fName.concat(" ", lName, " a, ", cTitle, " from ", cName, " and they can be reached at:\n ", cNumb, "")
+    From: eMail,
+    Subject: mySubject,
+    Body: myMessage
   })
   .then(function (message) {
     alert("Thanks for registering with me!\nMail sent successfully")

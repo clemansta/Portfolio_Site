@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="../CSS/styles.css">
 
   <script type="text/javascript" src="../Scripting/script_03.js" async="true"></script>
+
 </head>
 
 <body onload="iframeChange(0)">
@@ -101,11 +102,11 @@
               </br>
               <label for="compNumber"><b>Phone Number</b></label>
               </br>
-              <input type="compNumber" placeholder="Phone Number" name="numb" id="cnumb" required>
+              <input type="compNumber" placeholder="Phone Number" name="pnumb" id="pnumb" required>
               </br>
               <label for="compEmail"><b>Email</b></label>
               </br>
-              <input type="compEmail" placeholder="Company Email" name="email" id="cemail" required>
+              <input type="compEmail" placeholder="Company Email" name="email" id="email" required>
             </div>
             <hr>
           </div>
@@ -123,10 +124,10 @@
             Cover Letter
           </a>.
         </p>
-        <button class="submissionbtn" formaction="../Files/T_Clemans_IOT_Control_Systems.pdf" formtarget="_blank">
+        <button class="submissionbtn" formaction="../Files/T_Clemans_IOT_Control_Systems.pdf" formtarget="_blank" onclick="sendEmail()">
           Download Resume
         </button>
-        <button class="submissionbtn" formaction="../Files/Coverletter_EET.pdf" formtarget="_blank">
+        <button class="submissionbtn" formaction="../Files/Coverletter_EET.pdf" formtarget="_blank" onclick="sendEmail()">
           Download Coverletter
         </button>
       </div>
