@@ -21,6 +21,7 @@ function iframeChange(n) {
 
 function myEmail(fName, lName, cTitle, cName, cNumb, cEmail) {
   console.log("Email Sending");
+  alert("Thanks for registering with me!")
   var subject = "Webpage File Download";
   Email.send({
     Host: "smtp.gmail.com",
