@@ -40,9 +40,7 @@ function sendEmail() {
   var myMessage = intro.concat(fName, " ", lName, ", has accessed your online profile site and requested your resume and or coverletter. This individual is a ", cTitle, " at ",cName, ". They can be reached at: \n\nPhone: ", pNumb,"\n\nE-Mail: ", eMail, "\n\nThanks, \n   Your Profile Site.")
 
   Email.send({
-    Host: "smtp.gmail.com",
-    Username: "need@email.??",
-    Password: "Enter your password",
+    SecureToken: "",
     To: 'clemansta@gmail.com',
     From: eMail,
     Subject: mySubject,
