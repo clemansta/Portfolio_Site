@@ -347,6 +347,11 @@ button:hover {
   color: black !important;
 }
 
+.disclamer {
+  font-size: 0.75rem;
+  opacity: 50%;
+}
+
 /* Resume Download */
 
 input[type=text], input[type=firstName], input[type=lastName], 
