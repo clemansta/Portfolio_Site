@@ -169,6 +169,14 @@ button:hover {
   animation-duration: 1.0s;
 }
 
+#mLayout {
+  display: none;
+}
+
+#dLayout {
+  display: block;
+}
+
 /* Navigation Items */
 
 .nav-wrapper {
@@ -312,6 +320,10 @@ button:hover {
 .two-column-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.about {
+  padding: 0%;
 }
 
 .profile-image-wrapper img {
@@ -478,6 +490,24 @@ hr.rounded {
   }
   button {
     font-size: small;
+  }
+  #mLayout {
+    display: block;
+  }
+  #dLayout {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+  #mLayout {
+    display: block;
+  }
+  #dLayout {
+    display: none;
   }
 }
 
