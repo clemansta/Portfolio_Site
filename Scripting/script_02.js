@@ -1,10 +1,9 @@
 var pageIndex = [1,1,1,1];
-var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
-var dotId = ["myDots1", "myDots2", "myDots3", "myDots4"];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"];
+var dotId = ["myDots1", "myDots2", "myDots3"];
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
-showSlides(1, 3);
 
 function plusSlides(n, no) {
   showSlides(pageIndex[no] += n, no);
