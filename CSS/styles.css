@@ -19,6 +19,7 @@ a {
 }
 
 p {
+  font-size: 12pt;
   max-width: 800px;
 }
 
@@ -41,6 +42,7 @@ h2 {
 }
 
 li {
+  font-size: 12pt;
   width: 100%;
 }
 
