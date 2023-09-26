@@ -590,3 +590,15 @@ hr.rounded {
     width: 80%;
   }
 }
+
+@media screen and (orientation: portrait) {
+  @viewport {
+    width:var(device-with);
+  }
+}
+
+@media screen and (orientation: landscape) {
+  @viewport {
+    width:var(device-with);
+  }
+}
