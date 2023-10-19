@@ -349,6 +349,13 @@ button:hover {
   grid-column: span 3;
 }
 
+.project_wrapper {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 45px 1fr;
+  column-gap: 5px;
+}
+
 /* Footer Items */
 
 .foot-wrapper {
