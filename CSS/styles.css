@@ -28,6 +28,10 @@ pre {
   margin: 3px;
 }
 
+img {
+  align-items: center;
+}
+
 iframe {
   padding: 10px;
   margin: 0 5%;
@@ -67,7 +71,7 @@ button:hover {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
 }
 
 .brand {
@@ -190,13 +194,21 @@ button:hover {
 
 .left-side {
   display: flex;
+  align-items: center;
 }
 
 .right-side {
   display: flex;
+  align-items: center;
 }
 
 .nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-wrapper > .center-side > div {
   margin-right: 20px;
   text-transform: uppercase;
   font-size: 0.9rem;
@@ -322,8 +334,29 @@ button:hover {
 
 .two-column-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
 }
+
+.three-column-wrapper {
+  display: flex;
+  grid-template-columns: 30% 30% 30%;
+}
+
+.form-Left-side {
+  display: grid;
+  align-items: center;
+}
+
+.form-center-side {
+  display: grid;
+  align-items: center;
+}
+
+.form-right-side {
+  display: grid;
+  align-items: center;
+}
+
 
 .about {
   padding: 0%;
@@ -375,24 +408,18 @@ button:hover {
 }
 
 /* Resume Download */
-
-input[type=text], input[type=firstName], input[type=lastName], 
-input[type=compTitle], input[type=compName], input[type=compNumber], 
-input[type=compEmail]{
+input {
   width: 100%;
   padding: 15px;
   margin: 5px 0 10px 0;
   display: inline-block;
-  border: none;
-  background: #f1f1f1;
+  outline: none;
 }
 
-input[type=text]:focus, input[type=firstName]:focus, 
-input[type=lastName]:focus, input[type=compName]:focus,
-input[type=compTitle], input[type=compNumber]:focus, 
+input[type=firstName], input[type=lastName], 
+input[type=compTitle], input[type=compName], input[type=compNumber], 
 input[type=compEmail] {
-  background-color: #ddd;
-  outline: none;
+  background: #f1f1f1;
 }
 
 .submissionbtn {
@@ -491,9 +518,16 @@ hr.rounded {
   to {opacity: 1}
 }
 
+@media only screen and (max-width: 800px) {
+  .three-column-wrapper {
+    display: block;
+    grid-template-columns: 100%;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .two-column-wrapper, .portfolio-items-wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
   .skill-display {
     grid-column: span 1;
@@ -511,7 +545,7 @@ hr.rounded {
 
 @media only screen and (max-width: 1250px) {
   .about {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
   #mLayout {
     display: block;
@@ -525,11 +559,13 @@ hr.rounded {
   .nav-wrapper {
     display: block;
   }
-  .left-side {
+  .left-side, .right-side  {
     display: block;
+    padding: 1%;
   }
-  .right-side {
+  .form-left-side, .form-center-side, .form-right-side  {
     display: block;
+    padding: 1%;
   }
   .active-nav-link {
     width: 40%;
@@ -540,6 +576,9 @@ hr.rounded {
   }
   .nav-link-wrapper:hover {
     width: 40%;
+  }
+  input {
+    width: 50%;
   }
 }
 
@@ -556,5 +595,17 @@ hr.rounded {
 @media screen and (min-width: 800px) {
   table {
     width: 80%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  @viewport {
+    width:var(device-with);
+  }
+}
+
+@media screen and (orientation: landscape) {
+  @viewport {
+    width:var(device-with);
   }
 }
