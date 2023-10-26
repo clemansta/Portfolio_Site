@@ -454,9 +454,14 @@ input[type=compEmail] {
 .project_wrapper {
   display: grid;
   align-items: center; 
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 75px 1fr;
   column-gap: 5px;
   justify-items: left;
+}
+
+.logo {
+  height: 75px;
+  width: 75px
 }
 
 /* Document display */
