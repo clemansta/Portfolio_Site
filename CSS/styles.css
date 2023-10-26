@@ -334,7 +334,7 @@ button:hover {
 
 .two-column-wrapper {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 48% 48%;
 }
 
 .three-column-wrapper {
@@ -380,13 +380,6 @@ button:hover {
   padding: 10px;
   height: auto;
   grid-column: span 3;
-}
-
-.project_wrapper {
-  display: grid;
-  align-items: center; 
-  grid-template-columns: 45px 1fr;
-  column-gap: 5px;
 }
 
 /* Footer Items */
@@ -437,6 +430,8 @@ input[type=compEmail] {
   opacity:1;
 }
 
+/* Project display */
+
 .projectbtn {
   background-color: #170a5f;
   color: white;
@@ -450,6 +445,18 @@ input[type=compEmail] {
 
 .projectbtn:hover {
   opacity:1;
+
+}
+.project {
+  height: 1000px;
+}
+
+.project_wrapper {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 50px 1fr;
+  column-gap: 5px;
+  justify-items: left;
 }
 
 /* Document display */
@@ -500,10 +507,6 @@ th,td {
 hr.rounded {
   border-top: 3px solid #170a5f;
   border-radius: 3px;
-}
-
-.project {
-  height: 800px;
 }
 
 /* Media Querys */
