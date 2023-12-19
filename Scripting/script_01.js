@@ -1,10 +1,11 @@
 
 var pageIndex = [1,1,1,1];
-var slideId = ["mySlides1", "mySlides2", "mySlides3"];
-var dotId = ["myDots1", "myDots2", "myDots3"];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
+var dotId = ["myDots1", "myDots2", "myDots3", "myDots4"];
 showSlides(1, 0);
-showSlides(1, 1);
-showSlides(1, 2);
+showSlides(2, 1);
+showSlides(3, 2);
+showSlides(4, 3);
 var n = "";
 
 function profile_script() {

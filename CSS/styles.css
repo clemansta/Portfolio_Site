@@ -151,7 +151,7 @@ button:hover {
   top: 0;
 }
 
-.myDots1, .myDots2, .myDots3 {
+.myDots1, .myDots2, .myDots3, .myDots4 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -165,7 +165,7 @@ button:hover {
   background-color: #000000;
 }
 
-.myDots1:hover, .myDots2:hover {
+.myDots1:hover, .myDots2:hover, .myDots3:hover, .myDots4:hover {
   background-color: #000000;
 }
 
