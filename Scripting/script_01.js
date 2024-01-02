@@ -1,12 +1,16 @@
+const dt = new Date();
 
 var pageIndex = [1,1,1,1];
 var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
 var dotId = ["myDots1", "myDots2", "myDots3", "myDots4"];
+var picChange = ["changePic1", "changePic2", "changePic3", "changePic4"];
+var n = "";
+
 showSlides(1, 0);
 showSlides(2, 1);
 showSlides(3, 2);
 showSlides(4, 3);
-var n = "";
+
 
 function profile_script() {
   const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
@@ -75,6 +79,11 @@ function showSlides(n, no) {
 
   slides[pageIndex[no]-1].style.display = "block";
   dots[pageIndex[no]-1].className += " active";
+  picChange[no] = dt.getTime();
+}
+
+function autoSlides() {
+  setTimeout(autoSlides, 5000);
 }
 
 function getViewport() {

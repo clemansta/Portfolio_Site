@@ -342,7 +342,13 @@ button:hover {
   grid-template-columns: 30% 30% 30%;
 }
 
-.form-Left-side {
+.split-column-wrapper{
+  display: grid;
+  padding-left : 5%;
+  grid-template-columns: 10% 80%;
+}
+
+.form-left-side {
   display: grid;
   align-items: center;
 }
@@ -356,7 +362,6 @@ button:hover {
   display: grid;
   align-items: center;
 }
-
 
 .about {
   padding: 0%;
