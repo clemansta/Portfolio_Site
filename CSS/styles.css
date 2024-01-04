@@ -104,7 +104,7 @@ button:hover {
   margin: auto;
 }
 
-.mySlides1, .mySlides2{
+.mySlides1, .mySlides2, .mySlides3, .mySlides4{
   display: none;
 }
 
@@ -348,12 +348,6 @@ button:hover {
   grid-template-columns: 30% 30% 30%;
 }
 
-.split-column-wrapper{
-  display: grid;
-  padding-left : 5%;
-  grid-template-columns: 10% 80%;
-}
-
 .form-left-side {
   display: grid;
   align-items: center;
@@ -395,9 +389,27 @@ button:hover {
   grid-column: span 3;
 }
 
-.timeline{
+.split-column-wrapper {
+  display: grid;
+  padding-left : 5%;
+  grid-template-columns: 10% 4% 75%;
+}
+
+.timeline {
   padding: 1px;
   margin: 1px;
+}
+
+.time-list {
+  padding-left: 3%;
+}
+
+.vert-line {
+  border-left: 3px solid green;
+  height: 100%;
+  width: 1%;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 /* Resume Download */
