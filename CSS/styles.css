@@ -392,7 +392,7 @@ button:hover {
 .split-column-wrapper {
   display: grid;
   padding-left : 5%;
-  grid-template-columns: 10% 4% 75%;
+  grid-template-columns: 15% 4% 70%;
 }
 
 .timeline {
