@@ -98,12 +98,19 @@ function getViewport() {
 }
 
 function iframeChange(n) {
-  if(n == 1) {
+  if(n == 2) {
     document.getElementById("FR1").style.display = "none";
+    document.getElementById("FR2").style.display = "none";
+    document.getElementById("FR3").style.display = "block";
+    document.getElementById("FR3").style.height = (document.getElementById("FR3").contentWindow.document.body.scrollHeight + 50 + 'px');
+  } else if(n == 1) {
+    document.getElementById("FR1").style.display = "none";
+    document.getElementById("FR3").style.display = "none";
     document.getElementById("FR2").style.display = "block";
     document.getElementById("FR2").style.height = (document.getElementById("FR2").contentWindow.document.body.scrollHeight + 50 + 'px');
   } else {
     document.getElementById("FR2").style.display = "none";
+    document.getElementById("FR3").style.display = "none";
     document.getElementById("FR1").style.display = "block";
     document.getElementById("FR1").style.height = (document.getElementById("FR1").contentWindow.document.body.scrollHeight + 50 + 'px');
     console.log()
