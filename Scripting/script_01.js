@@ -11,7 +11,6 @@ showSlides(2, 1);
 showSlides(3, 2);
 showSlides(4, 3);
 
-
 function profile_script() {
   const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
 
@@ -98,22 +97,19 @@ function getViewport() {
 }
 
 function iframeChange(n) {
-  if(n == 2) {
-    document.getElementById("FR1").style.display = "none";
-    document.getElementById("FR2").style.display = "none";
-    document.getElementById("FR3").style.display = "block";
-    document.getElementById("FR3").style.height = (document.getElementById("FR3").contentWindow.document.body.scrollHeight + 50 + 'px');
-  } else if(n == 1) {
-    document.getElementById("FR1").style.display = "none";
-    document.getElementById("FR3").style.display = "none";
-    document.getElementById("FR2").style.display = "block";
-    document.getElementById("FR2").style.height = (document.getElementById("FR2").contentWindow.document.body.scrollHeight + 50 + 'px');
-  } else {
-    document.getElementById("FR2").style.display = "none";
-    document.getElementById("FR3").style.display = "none";
-    document.getElementById("FR1").style.display = "block";
-    document.getElementById("FR1").style.height = (document.getElementById("FR1").contentWindow.document.body.scrollHeight + 50 + 'px');
-    console.log()
+  let fName = "FR" + n;
+  let tName,hName;
+  for(let i = 0; i < 3; i++) {
+    tName = "FR" + i;
+    hName = "TR" + i;
+    if(fName == tName) {
+      document.getElementById(hName).style.display = "block";
+      document.getElementById(tName).style.display = "block";
+      document.getElementById(tName).style.height = (document.getElementById(fName).contentWindow.document.body.scrollHeight + 25 + 'px');
+    } else {
+      document.getElementById(hName).style.display = "none";
+      document.getElementById(tName).style.display = "none";
+    }    
   }
 }
 

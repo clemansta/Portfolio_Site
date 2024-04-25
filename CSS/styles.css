@@ -415,7 +415,8 @@ button:hover {
 /* Resume Download */
 
 input {
-  width: 100%;
+  width: 90%;
+  max-width: 250px;
   padding: 15px;
   margin: 5px 0 10px 0;
   display: inline-block;
@@ -557,7 +558,7 @@ hr.rounded {
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 825px) {
   .three-column-wrapper {
     display: block;
     grid-template-columns: 100%;
