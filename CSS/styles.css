@@ -20,7 +20,6 @@ a {
 
 p {
   font-size: 12pt;
-  max-width: 800px;
 }
 
 pre {
@@ -45,14 +44,22 @@ h2 {
   text-indent: 10%;
 }
 
+ul {
+  padding: 2%;
+  margin: 1px;
+  list-style-type:square;
+}
+
+dl {
+  padding: 2%;
+  margin: 1px;
+  list-style-type:disc;
+}
+
 li {
   font-size: 12pt;
   width: 100%;
-}
-
-ul {
-  padding: 1px;
-  margin: 1px;
+  list-style-type:circle;
 }
 
 button {
